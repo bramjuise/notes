@@ -17,9 +17,20 @@ const conn = mysql.createConnection({
 app.use(express.static(__dirname + 'public'));
 app.set('view engine', 'ejs')
 
-app.get('/', (req,res) => {
-    res.render('index', {title:"main"})
+app.get('/', (req, res) => {
+    res.render('index', {
+        title: "main",
+        test: "false"
+    })
 })
+
+
+
+
+app.get('/post', (req, res) => {
+    res.send(200)
+})
+
 
 app.use('/', winter_router)
 app.use('/', spring_router)
@@ -27,7 +38,6 @@ app.use('/', summer_router)
 app.use('/', autumn_router)
 
 
-
-app.listen(port, ()=>{
+app.listen(port, () => {
     console.log(`Server started on port ${port}`)
 })
