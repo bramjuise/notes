@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(240, 240, 240);
+
+}
+
+.cheer {
+    text-align: center;
+}
+
+.cheer h1 {
+    font-size: 50px;
+}
+
+.string {
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    height: 10px;
+}
+
+.month {
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 30px;
+    width: 400px;
+    -webkit-box-shadow: 0px 5px 32px 12px rgba(34, 60, 80, 0.21);
+    -moz-box-shadow: 0px 5px 32px 12px rgba(34, 60, 80, 0.21);
+    box-shadow: 0px 5px 32px 12px rgba(34, 60, 80, 0.21);
+    display: inline-block;
+
+}
+
+.article {
+    margin: 60px;
+    padding: 20px;
+    border-radius: 30px;
+    width: 300px;
+    -webkit-box-shadow: 0px 5px 32px 12px rgba(34, 60, 80, 0.21);
+    -moz-box-shadow: 0px 5px 32px 12px rgba(34, 60, 80, 0.21);
+    box-shadow: 0px 5px 32px 12px rgba(34, 60, 80, 0.21);
+    display: inline-block;
+}
+
+.article a {
+    position: relative;
+    left: 250px;
+    top: -50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 56px;
+    padding-bottom: 70px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.month a {
+    position: relative;
+    left: 350px;
+    top: -50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.winter {
+    background-color: rgb(155, 153, 255);
+}
+
+.spring {
+    background-color: rgb(182, 240, 124);
+}
+
+.summer {
+    background-color: rgb(240, 152, 120);
+}
+
+.autumn {
+    background-color: rgb(243, 243, 140);
+}
+
+.header h1{
+ text-align: right;
+ margin-right: 50px;
+ font-size: 60px;
+}
+
+.winter_font {
+    color: rgb(155, 153, 255);
+}
+
+.spring_font {
+    color: rgb(182, 240, 124);
+}
+
+.summer_font {
+    color: rgb(240, 152, 120);
+}
+
+.autumn_font {
+    color: rgb(243, 243, 140);
+}

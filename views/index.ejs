@@ -4,9 +4,211 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> <%= title %> </title>
+    <title>Document</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(240, 240, 240);
+
+}
+
+.cheer {
+    text-align: center;
+}
+
+.cheer h1 {
+    font-size: 50px;
+}
+
+.string {
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    height: 10px;
+}
+
+.month {
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 30px;
+    width: 400px;
+    -webkit-box-shadow: 0px 5px 32px 12px rgba(34, 60, 80, 0.21);
+    -moz-box-shadow: 0px 5px 32px 12px rgba(34, 60, 80, 0.21);
+    box-shadow: 0px 5px 32px 12px rgba(34, 60, 80, 0.21);
+    display: inline-block;
+
+}
+
+.article {
+    margin: 60px;
+    padding: 20px;
+    border-radius: 30px;
+    width: 300px;
+    -webkit-box-shadow: 0px 5px 32px 12px rgba(34, 60, 80, 0.21);
+    -moz-box-shadow: 0px 5px 32px 12px rgba(34, 60, 80, 0.21);
+    box-shadow: 0px 5px 32px 12px rgba(34, 60, 80, 0.21);
+    display: inline-block;
+}
+
+.article a {
+    position: relative;
+    left: 250px;
+    top: -50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 56px;
+    padding-bottom: 70px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.month a {
+    position: relative;
+    left: 350px;
+    top: -50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.winter {
+    background-color: rgb(155, 153, 255);
+}
+
+.spring {
+    background-color: rgb(182, 240, 124);
+}
+
+.summer {
+    background-color: rgb(240, 152, 120);
+}
+
+.autumn {
+    background-color: rgb(243, 243, 140);
+}
+
+.header h1{
+ text-align: right;
+ margin-right: 50px;
+ font-size: 60px;
+}
+
+.winter_font {
+    color: rgb(155, 153, 255);
+}
+
+.spring_font {
+    color: rgb(182, 240, 124);
+}
+
+.summer_font {
+    color: rgb(240, 152, 120);
+}
+
+.autumn_font {
+    color: rgb(243, 243, 140);
+}
+    </style>
 </head>
 <body>
-    <h1>HI THERE</h1>
+    <div class="cheer">
+        <h1>HI Y2LONNE</h1>
+        <h2 id="times">Today </h2>
+    </div>
+    <div class="string"></div>
+    <div class="content">
+        <div class="months">
+            <div class="month">
+                <h2>January</h2>
+                <p>30 rows</p>
+                <a href="/january" class="winter">go</a>
+            </div>
+            <div class="month">
+                <h2>February</h2>
+                <p>30 rows</p>
+                <a href="/february" class="winter">go</a>
+            </div>
+            <div class="month">
+                <h2>March</h2>
+                <p>30 rows</p>
+                <a href="/march" class="spring">go</a>
+            </div>
+            <div class="month">
+                <h2>April</h2>
+                <p>30 rows</p>
+                <a href="/april" class="spring">go</a>
+            </div>
+            <div class="month">
+                <h2>May</h2>
+                <p>30 rows</p>
+                <a href="/may" class="spring">go</a>
+            </div>
+            <div class="month">
+                <h2>June</h2>
+                <p>30 rows</p>
+                <a href="/june" class="summer">go</a>
+            </div>
+            <div class="month">
+                <h2>July</h2>
+                <p>30 rows</p>
+                <a href="/july" class="summer">go</a>
+            </div>
+            <div class="month">
+                <h2>August</h2>
+                <p>30 rows</p>
+                <a href="/august" class="summer">go</a>
+            </div>
+            <div class="month">
+                <h2>September</h2>
+                <p>30 rows</p>
+                <a href="/september" class="autumn">go</a>
+            </div>
+            <div class="month">
+                <h2>October</h2>
+                <p>30 rows</p>
+                <a href="/october" class="autumn">go</a>
+            </div>
+            <div class="month">
+                <h2>November</h2>
+                <p>30 rows</p>
+                <a href="/november" class="autumn">go</a>
+            </div>
+            <div class="month">
+                <h2>December</h2>
+                <p>30 rows</p>
+                <a href="/december" class="winter">go</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function setoday(){
+        var date = new Date()
+        var timeEL = document.getElementById('times')
+        var day = date.getDate()
+        var month = date.getMonth()+1
+        if(day<10){
+            day = "0"+day
+        }
+        if(month<10){
+            month = '0'+month
+        }
+        timeEL.innerHTML += day+'.'+month
+    }
+
+        setoday()
+    </script>
 </body>
 </html>
