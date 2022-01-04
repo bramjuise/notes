@@ -27,11 +27,6 @@ app.get('/', (req, res) => {
 
 
 
-app.get('/post', (req, res) => {
-    res.send(200)
-})
-
-
 app.use('/', winter_router)
 app.use('/', spring_router)
 app.use('/', summer_router)

@@ -49,7 +49,7 @@ router.get('/february', (req, res) => {
 
 })
 
-router.get('/:id', (req, res) => {
+router.get('/winter/:id', (req, res) => {
     var data_article_id = req.params.id;
 
     conn.query(
@@ -65,6 +65,15 @@ router.get('/:id', (req, res) => {
 
 })
 
+router.get('/winter/post/new-article', (req, res) => {
+    res.render('post_form', {season:"winter"})
+})
+
+router.get('/winter/post/submit-new-article', (req, res) => {
+    var data = req.query;
+    conn.query("INSERT INTO winter (title, date, text, month) VALUES (?,?,?,?)", [data.title, data.date, data.text, data.month])
+    res.redirect(`/${req.query.month}`)
+})
 
 
 module.exports = router;

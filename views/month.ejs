@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><%= month %></title>
     <style>
         body {
     margin: 0;
@@ -42,7 +42,7 @@
 }
 
 .article {
-    margin: 60px;
+    margin: 70px;
     padding: 20px;
     border-radius: 30px;
     width: 300px;
@@ -132,13 +132,13 @@
         <div class="articles">
             <div class="article">
                 <h1>ADD new</h1>
-                <a  href="/post" class="<%= season %>">ADD</a>
+                <a  href="/<%=season%>/post/new-article" class="<%= season %>">ADD</a>
             </div>
             <% var data = data %> 
             <% data.forEach(article => { %>
             <div class="article">
                 <h1>Article for <%= article.date %> </h1>
-                <a href="/<%= article.id %> " class="<%= season %>">CHECK</a>
+                <a href="/<%=season%>/<%= article.id %> " class="<%= season %>">CHECK</a>
             </div>             
             <% }) %>
 
